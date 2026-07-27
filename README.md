@@ -43,46 +43,43 @@ LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management appl
 - GitHub
   
 ## 🏗️ System Architecture
-![Architecture](images/architecture.png)
+<img src="" height="1000px" width="1000px">
 The system architecture demonstrates the flow between the React frontend, Express backend API, and the Supabase PostgreSQL database, ensuring secure and scalable data management.
 
 ## 🔄 Project Workflow
-![Workflow](images/workflow.png)
+<img src="" height="1000px" width="1000px">
 The workflow begins with a prospect submitting their details via the Lead Capture Form on the Landing Page. The data is securely transmitted to the Express backend where it undergoes validation before being stored in the Supabase PostgreSQL database. Once stored, authorized administrators can log into the Admin Dashboard to search, view, and update the status of the new leads in real-time.
 
 ## 🖼️ Screenshots
 ### Landing Page
-![Landing Page](images/landing-page.png)
+<p align="center"><img src="" height="1000px">
 
 ### Lead Form
-![Lead Form](images/lead-form.png)
+<p align="center"><img src="" height="1000px">
 
 ### Form Validation
-![Form Validation](images/form-validation.png)
+<p align="center"><img src="" height="1000px">
 
 ### Admin Login
-![Admin Login](images/admin-login.png)
+<p align="center"><img src="" height="1000px">
 
 ### Dashboard
-![Dashboard](images/dashboard.png)
+<p align="center"><img src="" height="1000px">
 
 ### Search Leads
-![Search Leads](images/search-leads.png)
+<p align="center"><img src="" height="1000px">
 
 ### Lead Status Update
-![Lead Status Update](images/lead-status-update.png)
+<p align="center"><img src="" height="1000px">
 
 ### Dark Theme
-![Dark Theme](images/dark-theme.png)
-
-### Light Theme
-![Light Theme](images/light-theme.png)
-
+<p align="center"><img src="" height="1000px">
+  
 ### Mobile View
-![Mobile View](images/mobile-view.png)
+<p align="center"><img src="" height="1000px">
 
 ### Database
-  
+<p align="center"><img src="" height="1000px"> 
 
 # 📚 Learning Outcomes
 
