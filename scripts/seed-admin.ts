@@ -1,14 +1,18 @@
 import "dotenv/config";
 import { db } from "../src/db/index.js";
 import { adminUsers } from "../src/db/schema.js";
+import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 
 async function seed() {
   try {
-    const passwordHash = bcrypt.hashSync("admin123", 10);
+    // Delete the old admin
+    await db.delete(adminUsers).where(eq(adminUsers.username, 'admin'));
+
+    const passwordHash = bcrypt.hashSync("mahasavi18@", 10);
     await db.insert(adminUsers).values({
-      username: "admin",
-      email: "admin@example.com",
+      username: "ritish1808",
+      email: "ritish1808@gmail.com",
       passwordHash: passwordHash,
       role: "admin",
     });
