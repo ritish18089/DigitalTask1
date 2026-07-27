@@ -143,7 +143,7 @@ npm start
 | Resource | Link |
 |----------|------|
 | **Live Landing Page URL** | https://leaddesk-backend-8dwt.onrender.com/ |
-| **Admin Dashboard URL** | https://leaddesk-backend-8dwt.onrender.com/admin/login |
+| **Admin Dashboard URL** | https://leaddesk-backend-8dwt.onrender.com/admin/dashboard |
 | **Public GitHub Repository** | https://github.com/ritish18089/DigitalTask1 |
 
 ## 🚀 Future Enhancements
