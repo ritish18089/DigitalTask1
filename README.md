@@ -42,11 +42,11 @@ LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management appl
 - GitHub
   
 ## 🏗️ System Architecture
-<img src="https://github.com/ritish18089/DigitalTask1/blob/main/DigitalTask1.png" height="1000px" width="1000px">
+<img src="https://github.com/ritish18089/DigitalTask1/blob/main/Leaddesk1.png" height="1000px" width="1000px">
 The system architecture demonstrates the flow between the React frontend, Express backend API, and the Supabase PostgreSQL database, ensuring secure and scalable data management.
 
 ## 🔄 Project Workflow
-<img src="https://github.com/ritish18089/DigitalTask1/blob/main/DigitalTask11.png" height="1000px" width="1000px">
+<img src="https://github.com/ritish18089/DigitalTask1/blob/main/Leaddesk2.png" height="1000px" width="1000px">
 The workflow begins with a prospect submitting their details via the Lead Capture Form on the Landing Page. The data is securely transmitted to the Express backend where it undergoes validation before being stored in the Supabase PostgreSQL database. Once stored, authorized administrators can log into the Admin Dashboard to search, view, and update the status of the new leads in real-time.
 
 ## 🖼️ Screenshots
