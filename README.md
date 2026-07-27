@@ -1,4 +1,4 @@
-# LeadDesk Mini
+# LeadDesk Mini - 🌟 Simplifying Lead Management with Full-Stack Innovation
 
 ## 📖 Project Overview
 LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management application designed to streamline the process of capturing and managing potential client inquiries. It solves the critical business problem of scattered prospect data by providing a centralized, unified platform where sales teams can instantly view, track, and update lead statuses in real-time, ultimately accelerating the sales pipeline and improving conversion rates.
