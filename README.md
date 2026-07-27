@@ -1,74 +1,204 @@
-# LeadDesk Mini
+# 📌 LeadDesk Mini
 
-A complete production-ready Full Stack web application built for the Digital Heroes Training Task.
+# 📖 Project Overview
+LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management application designed to streamline the process of capturing and managing potential client inquiries. It solves the critical business problem of scattered prospect data by providing a centralized, unified platform where sales teams can instantly view, track, and update lead statuses in real-time, ultimately accelerating the sales pipeline and improving conversion rates.
 
-## Project Overview
+# ✨ Features
+- Responsive Landing Page
+- Lead Capture Form
+- Client-side Validation
+- Server-side Validation
+- PostgreSQL Database
+- Supabase Integration
+- Admin Login
+- Admin Dashboard
+- Search Leads
+- Update Lead Status
+- Dark & Light Theme
+- Responsive UI
+- REST API Integration
 
-LeadDesk Mini is a modern SaaS platform designed to capture and manage leads efficiently. It consists of two main modules:
-1. **Public Website**: A modern landing page with a responsive UI, animations, and a lead capture form.
-2. **Admin Dashboard**: A secure portal to manage, search, and update lead statuses.
+# 🏗️ System Architecture
 
-## Features
+![Architecture](images/architecture.png)
 
-- **Responsive Landing Page**: Built with React, Tailwind CSS, and Framer Motion.
-- **Lead Capture Form**: Client and Server-side validation using Zod.
-- **Admin Dashboard**: Real-time stats, data table with pagination, sorting, and search via TanStack Table.
-- **Lead Management**: Update lead statuses (NEW -> CONTACTED -> CLOSED) with instant database updates.
-- **Authentication**: Secured admin routes using JWT/Bearer authentication.
-- **PostgreSQL Database**: Relational schema defined and managed via Drizzle ORM.
+*The system architecture demonstrates the flow between the React frontend, Express backend API, and the Supabase PostgreSQL database, ensuring secure and scalable data management.*
 
-## Tech Stack
+# 🔄 Project Workflow
 
-- **Frontend**: React 19, Vite, TypeScript, Tailwind CSS, React Router DOM, React Hook Form, Zod, Axios, React Hot Toast, TanStack Table, Lucide React Icons, Framer Motion.
-- **Backend**: Express, TypeScript, Node.js (following clean architecture patterns)
-- **Database**: Cloud SQL PostgreSQL managed via Drizzle ORM.
-- **Deployment**: Configured for Vercel (Frontend) and Render (Backend), though running seamlessly in Google AI Studio via single-container deployment.
+![Workflow](images/workflow.png)
 
-## Installation
+*The workflow begins with a prospect submitting their details via the Lead Capture Form on the Landing Page. The data is securely transmitted to the Express backend where it undergoes validation before being stored in the Supabase PostgreSQL database. Once stored, authorized administrators can log into the Admin Dashboard to search, view, and update the status of the new leads in real-time.*
 
-1. Clone the repository.
-2. Install dependencies:
+# 🖼️ Screenshots
+
+### Landing Page
+![Landing Page](images/landing-page.png)
+*Modern, responsive landing page designed for conversion.*
+
+### Lead Form
+![Lead Form](images/lead-form.png)
+*Interactive form for capturing prospect details.*
+
+### Form Validation
+![Form Validation](images/form-validation.png)
+*Real-time client-side and server-side input validation.*
+
+### Admin Login
+![Admin Login](images/admin-login.png)
+*Secure login portal for administrators.*
+
+### Dashboard
+![Dashboard](images/dashboard.png)
+*Comprehensive overview of all captured leads and system metrics.*
+
+### Search Leads
+![Search Leads](images/search-leads.png)
+*Instant filtering and searching capabilities across all lead data.*
+
+### Lead Status Update
+![Lead Status Update](images/lead-status-update.png)
+*Quickly update the progress of leads from New to Contacted or Closed.*
+
+### Dark Theme
+![Dark Theme](images/dark-theme.png)
+*Elegant dark mode for reduced eye strain.*
+
+### Light Theme
+![Light Theme](images/light-theme.png)
+*Clean and crisp light mode interface.*
+
+### Mobile View
+![Mobile View](images/mobile-view.png)
+*Fully responsive design optimized for mobile devices.*
+
+# 🛠️ Technology Stack
+
+**Frontend**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+**Backend**
+- Node.js
+- Express.js
+
+**Database**
+- PostgreSQL
+- Supabase
+
+**ORM**
+- Drizzle ORM
+
+**Tools**
+- VS Code
+- Git
+- GitHub
+- Postman
+
+# 📚 Learning Outcomes
+
+1. **Full-Stack Integration:** Gained practical experience connecting a modern React frontend with a robust Node.js/Express backend.
+2. **TypeScript Proficiency:** Enhanced type safety and developer experience across the entire stack using TypeScript.
+3. **Advanced State Management:** Mastered managing application state, including global theme toggling (Dark/Light mode).
+4. **Form Handling & Validation:** Implemented robust client-side validation using React Hook Form and Zod.
+5. **Database Design & Management:** Designed efficient database schemas and managed relational data using PostgreSQL.
+6. **ORM Implementation:** Utilized Drizzle ORM for type-safe database queries and migrations.
+7. **Authentication Flows:** Built secure login mechanisms and protected administrative routes.
+8. **Responsive UI Development:** Crafted accessible and responsive interfaces using Tailwind CSS.
+9. **API Development:** Designed and implemented RESTful API endpoints for CRUD operations.
+10. **Deployment Strategies:** Prepared and configured applications for modern cloud hosting environments (Netlify, Render, Supabase).
+
+# ⚙️ Installation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone <YOUR_GITHUB_REPO_URL>
+   cd leaddesk-mini
+   ```
+2. **Install dependencies:**
    ```bash
    npm install
    ```
-3. Ensure `.env` is configured with Database credentials (SQL_HOST, SQL_USER, SQL_PASSWORD, SQL_DB_NAME).
-4. Run the development server:
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and add your database credentials and API keys.
+4. **Run Database Migrations:**
+   Execute the necessary Drizzle ORM commands to push your schema to the Supabase database.
    ```bash
-   npm run dev
+   npx drizzle-kit push
    ```
 
-## API Documentation
+# ▶️ How to Run
 
-- `POST /api/leads` - Submit a new lead.
-- `POST /api/admin/login` - Admin authentication endpoint.
-- `GET /api/admin/leads` - Fetch all leads (Protected).
-- `GET /api/admin/leads/search?q={query}` - Search leads by keyword (Protected).
-- `PUT /api/admin/leads/{id}/status` - Update lead status (Protected).
-- `DELETE /api/admin/leads/{id}` - Delete a lead (Protected).
+## Using Command Line
 
-## Folder Structure
-
-```
-/
-├── server.ts              # Backend entry point (Express)
-├── src/
-│   ├── components/        # Reusable UI components
-│   ├── pages/             # Page components (Landing, Login, Dashboard)
-│   ├── services/          # API services
-│   ├── types/             # TypeScript global types
-│   ├── db/                # Drizzle ORM schema and configuration
-│   └── App.tsx            # Main React Router setup
+To start the development server:
+```bash
+npm install
+npm run dev
 ```
 
-## Deployment
+For production builds:
+```bash
+npm run build
+npm start
+```
 
-- **Frontend**: The `dist` folder generated by Vite can be deployed to Vercel.
-- **Backend**: The Express server bundle (`dist/server.cjs`) is ready to deploy to Render.
-- **Database**: Cloud SQL PostgreSQL instance provisioned and securely connected.
+## Using VS Code
 
-## Future Enhancements
+1. **Open the project:** Launch VS Code and open the project folder.
+2. **Open Terminal:** Navigate to `Terminal > New Terminal` (or press `` Ctrl + ` ``).
+3. **Install packages:** Type `npm install` and press Enter.
+4. **Start the project:** Type `npm run dev` and press Enter. Open the provided localhost URL in your browser.
 
-- OAuth-based Admin Login (Google Workspace).
-- Email notifications for new leads.
-- Export leads to CSV.
-- Advanced analytics and charts.
+# 🌐 Deployment
+
+**Frontend:**
+Deployed on Netlify
+
+**Backend:**
+Deployed on Render
+
+**Database:**
+Hosted on Supabase
+
+**Live Landing Page URL:** `[Placeholder for Frontend URL]`
+
+**Admin URL:** `[Placeholder for Admin URL]`
+
+# 📦 Deliverables
+
+| Resource | Link |
+|----------|------|
+| **Live Landing Page URL** | `[Insert Link Here]` |
+| **Admin Dashboard URL** | `[Insert Link Here]` |
+| **Public GitHub Repository** | `[Insert Link Here]` |
+
+# 🚀 Future Enhancements
+
+1. **Email Notifications:** Automated email alerts when a new lead is captured.
+2. **Data Exporting:** Ability for admins to export leads to CSV or Excel formats.
+3. **Analytics Dashboard:** Visual charts and graphs representing lead conversion rates over time.
+4. **Multi-User Roles:** Role-based access control for different tiers of administrative users.
+5. **Kanban Board View:** A drag-and-drop board for visually managing lead progression.
+6. **Third-Party CRM Integrations:** Syncing capabilities with platforms like Salesforce or HubSpot.
+
+# 👨‍💻 Project Done By
+
+**Name:**
+Ritish Kannur
+
+**Degree:**
+BE – Information Science & Engineering
+
+**College:**
+APSC College of Engineering
+
+**GitHub:** `[Placeholder for GitHub URL]`
+
+**LinkedIn:** `[Placeholder for LinkedIn URL]`
+
+# 📄 License
+
+This project was created for educational purposes as part of the Digital Heroes Training Task.
