@@ -1,0 +1,6 @@
+{
+  "name": "LeadDesk Mini",
+  "description": "A modern SaaS platform designed to capture and manage leads efficiently.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
