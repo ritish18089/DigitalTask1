@@ -134,21 +134,17 @@ npm start
 4. **Start the project:** Type `npm run dev` and press Enter. Open the provided localhost URL in your browser.
 
 ## 🌐 Deployment
-
-**Frontend:**
-Deployed on Netlify
-**Backend:**
-Deployed on Render
-**Database:**
-Hosted on Supabase
+- **Frontend:** Deployed on Netlify
+- **Backend:** Deployed on Render
+- **Database:** Hosted on Supabase
 
 ## 📦 Deliverables
 
 | Resource | Link |
 |----------|------|
-| **Live Landing Page URL** | `[Insert Link Here]` |
-| **Admin Dashboard URL** | `[Insert Link Here]` |
-| **Public GitHub Repository** | `[Insert Link Here]` |
+| **Live Landing Page URL** | https://leaddesk-backend-8dwt.onrender.com/ |
+| **Admin Dashboard URL** | https://leaddesk-backend-8dwt.onrender.com/admin/login |
+| **Public GitHub Repository** | https://github.com/ritish18089/DigitalTask1 |
 
 ## 🚀 Future Enhancements
 
@@ -159,12 +155,7 @@ Hosted on Supabase
 5. **Kanban Board View:** A drag-and-drop board for visually managing lead progression.
 6. **Third-Party CRM Integrations:** Syncing capabilities with platforms like Salesforce or HubSpot.
 
-## 👨‍💻 Project Done By
-
-**Name:**
-Ritish Kannur
-**Project Name:**
-LeadDesk Mini
-**Training:**
-Under the training in Full-stack Development by the Digital Heros
-
+## 👨‍💻  Project Done By:
+- **Name:** Ritish Kannur
+- **Project Name:** LeadDesk Mini
+- **Training:** Under the training in Full-stack Development by the Digital Heros
