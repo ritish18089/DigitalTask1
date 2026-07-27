@@ -306,8 +306,19 @@ export default function AdminDashboard() {
               </div>
             )}
           </div>
-
         </div>
+
+        {/* Footer */}
+        <footer className="py-6 px-6 lg:px-8 text-center border-t border-gray-200 dark:border-gray-800">
+          <a 
+            href="https://digitalheroesco.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors"
+          >
+            Built for Digital Heroes Training Task
+          </a>
+        </footer>
       </main>
     </div>
   );

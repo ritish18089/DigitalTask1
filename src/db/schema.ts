@@ -17,3 +17,12 @@ export const users = pgTable('users', {
   email: text('email').notNull(),
   createdAt: timestamp('created_at').defaultNow(),
 });
+
+export const adminUsers = pgTable('admin_users', {
+  id: serial('id').primaryKey(),
+  username: text('username').notNull().unique(),
+  email: text('email').notNull().unique(),
+  passwordHash: text('password_hash').notNull(),
+  role: text('role').notNull().default('admin'),
+  createdAt: timestamp('created_at').defaultNow(),
+});

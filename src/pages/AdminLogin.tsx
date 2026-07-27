@@ -88,7 +88,15 @@ export default function AdminLogin() {
           </button>
         </form>
         <div className="mt-6 text-center text-sm text-gray-500">
-          <a href="/" className="hover:text-blue-600 transition-colors">← Back to website</a>
+          <a href="/" className="hover:text-blue-600 transition-colors block mb-4">← Back to website</a>
+          <a 
+            href="https://digitalheroesco.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-700 text-xs font-medium inline-block transition-colors"
+          >
+            Built for Digital Heroes Training Task
+          </a>
         </div>
       </motion.div>
     </div>

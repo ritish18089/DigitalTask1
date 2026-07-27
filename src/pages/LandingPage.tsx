@@ -336,16 +336,13 @@ export default function LandingPage() {
              </div>
              <span className="font-bold text-gray-900 dark:text-white tracking-tight">LeadDesk Mini</span>
           </div>
-          <p className="text-gray-500 dark:text-gray-400 text-sm">
-            Built for Digital Heroes Training Task
-          </p>
           <a 
             href="https://digitalheroesco.com" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-700 text-sm font-medium mt-2 inline-block transition-colors"
           >
-            digitalheroesco.com
+            Built for Digital Heroes Training Task
           </a>
         </div>
       </footer>

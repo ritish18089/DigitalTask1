@@ -5,8 +5,12 @@ import { createServer as createViteServer } from "vite";
 import cors from "cors";
 import http from "http";
 import { db } from "./src/db/index.ts";
-import { leads } from "./src/db/schema.ts";
+import { leads, adminUsers } from "./src/db/schema.ts";
 import { eq, desc, ilike, or } from "drizzle-orm";
+import jwt from "jsonwebtoken";
+import bcrypt from "bcryptjs";
+
+const JWT_SECRET = process.env.JWT_SECRET || "fallback-secret-for-dev";
 
 
 async function startServer() {
@@ -44,26 +48,40 @@ async function startServer() {
     }
   });
 
-  // Admin Routes (Using simple auth header check for this example to match "admin/admin123" requirement, 
-  // but in a real prod app with Firebase Auth, we would use the requireAuth middleware. 
-  // Since the user explicitly requested admin/admin123, we'll check a simple bearer or basic auth for simplicity, 
-  // or use Firebase auth if required. We will stick to a custom API token for admin to allow the requested hardcoded login).
-
   const adminAuth = (req: express.Request, res: express.Response, next: express.NextFunction) => {
     const authHeader = req.headers.authorization;
-    if (authHeader === 'Bearer admin-token' || authHeader === 'Basic cml0aXNoMTgwODptYWhhc2F2aTE4QA==') { // base64 for ritish1808:mahasavi18@
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(401).json({ error: "Unauthorized" });
+    }
+    const token = authHeader.split(' ')[1];
+    try {
+      const decoded = jwt.verify(token, JWT_SECRET);
+      (req as any).user = decoded;
       next();
-    } else {
+    } catch (error) {
       res.status(401).json({ error: "Unauthorized" });
     }
   };
 
-  app.post("/api/admin/login", (req, res) => {
+  app.post("/api/admin/login", async (req, res) => {
     const { username, password } = req.body;
-    if (username === 'ritish1808' && password === 'mahasavi18@') {
-      res.json({ token: 'admin-token' });
-    } else {
-      res.status(401).json({ error: "Invalid credentials" });
+    try {
+      const userResult = await db.select().from(adminUsers).where(eq(adminUsers.username, username));
+      const user = userResult[0];
+      if (!user) {
+        return res.status(401).json({ error: "Invalid credentials" });
+      }
+      
+      const isMatch = await bcrypt.compare(password, user.passwordHash);
+      if (!isMatch) {
+        return res.status(401).json({ error: "Invalid credentials" });
+      }
+      
+      const token = jwt.sign({ id: user.id, username: user.username, role: user.role }, JWT_SECRET, { expiresIn: '24h' });
+      res.json({ token, user: { username: user.username, role: user.role } });
+    } catch (error: any) {
+      console.error("Login error:", error);
+      res.status(500).json({ error: "Login failed" });
     }
   });
 
