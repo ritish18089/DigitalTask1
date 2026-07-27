@@ -51,34 +51,34 @@ The system architecture demonstrates the flow between the React frontend, Expres
 The workflow begins with a prospect submitting their details via the Lead Capture Form on the Landing Page. The data is securely transmitted to the Express backend where it undergoes validation before being stored in the Supabase PostgreSQL database. Once stored, authorized administrators can log into the Admin Dashboard to search, view, and update the status of the new leads in real-time.
 
 ## 🖼️ Screenshots
-### Landing Page
+### 🏠 Landing Page
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/1.png" height="1000px">
 
-### Lead Form
+### 📝 Lead Form
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/2.png" height="1000px">
 
-### Admin Login
+### 🔐 Admin Login
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/3.png" height="1000px">
 
-### Dashboard
+### 📊 Admin Dashboard
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/4.png" height="1000px">
 
-### Search Leads
+### 🔍 Search Leads
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/5.png" height="1000px">
 
-### Lead Status Update
+### ✏️ Lead Status Update
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/6.png" height="1000px">
 
-### Dark Theme
+### 🌙 Dark Theme
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/7.png" height="1000px">
   
-### Mobile View
+### 📱 Mobile View
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/8.png" height="1000px">
 
 ### Database
 <p align="center"><img src="https://github.com/ritish18089/DigitalTask1/blob/main/9.png" height="1000px"> 
 
-# 📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 1. **Full-Stack Integration:** Gained practical experience connecting a modern React frontend with a robust Node.js/Express backend.
 2. **TypeScript Proficiency:** Enhanced type safety and developer experience across the entire stack using TypeScript.
@@ -91,47 +91,42 @@ The workflow begins with a prospect submitting their details via the Lead Captur
 9. **API Development:** Designed and implemented RESTful API endpoints for CRUD operations.
 10. **Deployment Strategies:** Prepared and configured applications for modern cloud hosting environments (Netlify, Render, Supabase).
 
-## ⚙️ Installation Steps
+## Installation Steps
+- Ensure Node.js (v18 or later) and npm are installed on your system.
+- Clone or download the LeadDesk Mini repository.
+- Open a terminal and navigate to the project directory.
+- Install all required project dependencies.
+- Create a .env file in the project root and configure your environment variables (Supabase/PostgreSQL database credentials).
+- Verify that your Supabase PostgreSQL database is running and accessible.
+- Run the database migration (if required) to create the necessary tables.
+- Start the development server.
+- Open your browser and access the application using the local development URL.
 
-1. **Clone the repository:**
-   ```bash
-   git clone <YOUR_GITHUB_REPO_URL>
-   cd leaddesk-mini
-   ```
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-3. **Configure Environment Variables:**
-   Create a `.env` file in the root directory and add your database credentials and API keys.
-4. **Run Database Migrations:**
-   Execute the necessary Drizzle ORM commands to push your schema to the Supabase database.
-   ```bash
-   npx drizzle-kit push
-   ```
+## How to run
+1. Open Command Prompt, PowerShell, or Terminal.
 
-# ▶️ How to Run
-
-## Using Command Line
-
-To start the development server:
+2. Clone the project repository:
+```bash
+git clone https://github.com/ritish18089/DigitalTask1.git
+```
+3. Navigate to the project directory:
+```bash
+cd Digital-Task1
+```
+4. Install all required dependencies:
 ```bash
 npm install
+```
+5. Create a .env file and configure your Supabase/PostgreSQL database credentials.
+6. Start the development server:
+```bash
 npm run dev
 ```
-
-For production builds:
+7. Open your web browser and visit:
 ```bash
-npm run build
-npm start
+http://localhost:5000
 ```
-
-## Using VS Code
-
-1. **Open the project:** Launch VS Code and open the project folder.
-2. **Open Terminal:** Navigate to `Terminal > New Terminal` (or press `` Ctrl + ` ``).
-3. **Install packages:** Type `npm install` and press Enter.
-4. **Start the project:** Type `npm run dev` and press Enter. Open the provided localhost URL in your browser.
+8. The LeadDesk Mini application is now ready to use.
 
 ## 🌐 Deployment
 - **Frontend:** Deployed on Netlify
