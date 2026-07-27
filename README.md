@@ -1,9 +1,9 @@
-# 📌 LeadDesk Mini
+# LeadDesk Mini
 
-# 📖 Project Overview
+## 📖 Project Overview
 LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management application designed to streamline the process of capturing and managing potential client inquiries. It solves the critical business problem of scattered prospect data by providing a centralized, unified platform where sales teams can instantly view, track, and update lead statuses in real-time, ultimately accelerating the sales pipeline and improving conversion rates.
 
-# ✨ Features
+## ✨ Features
 - Responsive Landing Page
 - Lead Capture Form
 - Client-side Validation
@@ -18,61 +18,7 @@ LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management appl
 - Responsive UI
 - REST API Integration
 
-# 🏗️ System Architecture
-
-![Architecture](images/architecture.png)
-
-*The system architecture demonstrates the flow between the React frontend, Express backend API, and the Supabase PostgreSQL database, ensuring secure and scalable data management.*
-
-# 🔄 Project Workflow
-
-![Workflow](images/workflow.png)
-
-*The workflow begins with a prospect submitting their details via the Lead Capture Form on the Landing Page. The data is securely transmitted to the Express backend where it undergoes validation before being stored in the Supabase PostgreSQL database. Once stored, authorized administrators can log into the Admin Dashboard to search, view, and update the status of the new leads in real-time.*
-
-# 🖼️ Screenshots
-
-### Landing Page
-![Landing Page](images/landing-page.png)
-*Modern, responsive landing page designed for conversion.*
-
-### Lead Form
-![Lead Form](images/lead-form.png)
-*Interactive form for capturing prospect details.*
-
-### Form Validation
-![Form Validation](images/form-validation.png)
-*Real-time client-side and server-side input validation.*
-
-### Admin Login
-![Admin Login](images/admin-login.png)
-*Secure login portal for administrators.*
-
-### Dashboard
-![Dashboard](images/dashboard.png)
-*Comprehensive overview of all captured leads and system metrics.*
-
-### Search Leads
-![Search Leads](images/search-leads.png)
-*Instant filtering and searching capabilities across all lead data.*
-
-### Lead Status Update
-![Lead Status Update](images/lead-status-update.png)
-*Quickly update the progress of leads from New to Contacted or Closed.*
-
-### Dark Theme
-![Dark Theme](images/dark-theme.png)
-*Elegant dark mode for reduced eye strain.*
-
-### Light Theme
-![Light Theme](images/light-theme.png)
-*Clean and crisp light mode interface.*
-
-### Mobile View
-![Mobile View](images/mobile-view.png)
-*Fully responsive design optimized for mobile devices.*
-
-# 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 **Frontend**
 - React
@@ -95,7 +41,48 @@ LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management appl
 - VS Code
 - Git
 - GitHub
-- Postman
+  
+## 🏗️ System Architecture
+![Architecture](images/architecture.png)
+The system architecture demonstrates the flow between the React frontend, Express backend API, and the Supabase PostgreSQL database, ensuring secure and scalable data management.
+
+## 🔄 Project Workflow
+![Workflow](images/workflow.png)
+The workflow begins with a prospect submitting their details via the Lead Capture Form on the Landing Page. The data is securely transmitted to the Express backend where it undergoes validation before being stored in the Supabase PostgreSQL database. Once stored, authorized administrators can log into the Admin Dashboard to search, view, and update the status of the new leads in real-time.
+
+## 🖼️ Screenshots
+### Landing Page
+![Landing Page](images/landing-page.png)
+
+### Lead Form
+![Lead Form](images/lead-form.png)
+
+### Form Validation
+![Form Validation](images/form-validation.png)
+
+### Admin Login
+![Admin Login](images/admin-login.png)
+
+### Dashboard
+![Dashboard](images/dashboard.png)
+
+### Search Leads
+![Search Leads](images/search-leads.png)
+
+### Lead Status Update
+![Lead Status Update](images/lead-status-update.png)
+
+### Dark Theme
+![Dark Theme](images/dark-theme.png)
+
+### Light Theme
+![Light Theme](images/light-theme.png)
+
+### Mobile View
+![Mobile View](images/mobile-view.png)
+
+### Database
+  
 
 # 📚 Learning Outcomes
 
@@ -110,7 +97,7 @@ LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management appl
 9. **API Development:** Designed and implemented RESTful API endpoints for CRUD operations.
 10. **Deployment Strategies:** Prepared and configured applications for modern cloud hosting environments (Netlify, Render, Supabase).
 
-# ⚙️ Installation Steps
+## ⚙️ Installation Steps
 
 1. **Clone the repository:**
    ```bash
