@@ -43,11 +43,11 @@ LeadDesk Mini is a lightweight, high-performance Full Stack Lead Management appl
 - GitHub
   
 ## 🏗️ System Architecture
-<img src="" height="1000px" width="1000px">
+<img src="https://github.com/ritish18089/DigitalTask1/blob/main/DigitalTask1.png" height="1000px" width="1000px">
 The system architecture demonstrates the flow between the React frontend, Express backend API, and the Supabase PostgreSQL database, ensuring secure and scalable data management.
 
 ## 🔄 Project Workflow
-<img src="" height="1000px" width="1000px">
+<img src="https://github.com/ritish18089/DigitalTask1/blob/main/DigitalTask11.png" height="1000px" width="1000px">
 The workflow begins with a prospect submitting their details via the Lead Capture Form on the Landing Page. The data is securely transmitted to the Express backend where it undergoes validation before being stored in the Supabase PostgreSQL database. Once stored, authorized administrators can log into the Admin Dashboard to search, view, and update the status of the new leads in real-time.
 
 ## 🖼️ Screenshots
@@ -55,9 +55,6 @@ The workflow begins with a prospect submitting their details via the Lead Captur
 <p align="center"><img src="" height="1000px">
 
 ### Lead Form
-<p align="center"><img src="" height="1000px">
-
-### Form Validation
 <p align="center"><img src="" height="1000px">
 
 ### Admin Login
@@ -136,22 +133,16 @@ npm start
 3. **Install packages:** Type `npm install` and press Enter.
 4. **Start the project:** Type `npm run dev` and press Enter. Open the provided localhost URL in your browser.
 
-# 🌐 Deployment
+## 🌐 Deployment
 
 **Frontend:**
 Deployed on Netlify
-
 **Backend:**
 Deployed on Render
-
 **Database:**
 Hosted on Supabase
 
-**Live Landing Page URL:** `[Placeholder for Frontend URL]`
-
-**Admin URL:** `[Placeholder for Admin URL]`
-
-# 📦 Deliverables
+## 📦 Deliverables
 
 | Resource | Link |
 |----------|------|
@@ -159,7 +150,7 @@ Hosted on Supabase
 | **Admin Dashboard URL** | `[Insert Link Here]` |
 | **Public GitHub Repository** | `[Insert Link Here]` |
 
-# 🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 1. **Email Notifications:** Automated email alerts when a new lead is captured.
 2. **Data Exporting:** Ability for admins to export leads to CSV or Excel formats.
@@ -168,21 +159,12 @@ Hosted on Supabase
 5. **Kanban Board View:** A drag-and-drop board for visually managing lead progression.
 6. **Third-Party CRM Integrations:** Syncing capabilities with platforms like Salesforce or HubSpot.
 
-# 👨‍💻 Project Done By
+## 👨‍💻 Project Done By
 
 **Name:**
 Ritish Kannur
+**Project Name:**
+LeadDesk Mini
+**Training:**
+Under the training in Full-stack Development by the Digital Heros
 
-**Degree:**
-BE – Information Science & Engineering
-
-**College:**
-APSC College of Engineering
-
-**GitHub:** `[Placeholder for GitHub URL]`
-
-**LinkedIn:** `[Placeholder for LinkedIn URL]`
-
-# 📄 License
-
-This project was created for educational purposes as part of the Digital Heroes Training Task.
