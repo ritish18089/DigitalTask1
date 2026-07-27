@@ -162,7 +162,12 @@ http://localhost:5000
 | **Live Landing Page URL** |https://leaddesk-backend-8dwt.onrender.com/ |
 | **Admin Dashboard URL** | https://leaddesk-backend-8dwt.onrender.com/admin/dashboard |
 | **Public GitHub Repository** | https://github.com/ritish18089/DigitalTask1 |
-| **Loom Walkthrough Video** | |
+**Loom Walkthrough Video**
+
+
+https://github.com/user-attachments/assets/d791efcb-085b-416f-98f7-84e1586a9469
+
+
 
 ## 🚀 Future Enhancements
 
